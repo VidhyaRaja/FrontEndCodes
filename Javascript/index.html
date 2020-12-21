@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Page</title>
+<meta charset="UTF-8">
+<style>
+	body {
+	  background-color:rgba(112, 65, 57);
+	  padding: 120px;
+	}
+	
+	header {
+	  padding-bottom:5px;
+	  text-align:left;
+	  color:white;
+	}
+
+	ul {
+	  list-style-type:none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden; 
+	}
+	
+	li {
+	  display:inline-block;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover {
+	  background-color: #111111;
+	}	
+	
+	.background-settings {
+	  background-color:white;
+	  padding:20px;
+	  color:black;
+	  opacity:85%;
+	  display: -webkit-flex;
+	  display: flex;
+	}
+	
+	.background-settings h1{
+	  text-align:center;
+	  font-size:300%;
+	}
+	
+	.background-settings p{
+	  padding:45px;
+	}
+
+	/* Container for flexboxes */
+	section {
+	  display: -webkit-flex;
+	  display: flex;
+	  padding-top:10px;
+	}
+
+	/* Style the navigation menu */
+	.vertical-menu {
+	  background:rgb(138, 186, 194);
+	  padding:20px;
+	  width:150px;
+	  display: block;
+	  }
+	  
+	.vertical-menu li a {
+	  width:100px;
+	}
+	/* Style the list inside the menu */
+	nav ul {
+	  list-style-type: none;
+	  padding: 0;
+	} 
+
+	/* Style the content */
+	article {
+	  -webkit-flex: 3;
+	  -ms-flex: 3;
+	  flex: 3;
+	  background-color: rgb(242, 237, 225);
+	  padding: 10px;
+	} 
+	
+</style>
+</head>
+<body>
+<body>
+	<header>
+		<h1 style="font-size:50px">Your Logo<span style="font-size:15px"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</span></h1>
+			<div>	
+				<nav>
+					<ul style="background-color:rgba(54, 32, 29)">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+	</header>
+	<div>
+		<div class="background-settings">
+			<img src="leopard.jfif">
+			<p>
+				<span style="font-size:40px">
+				<b>About</b>
+				</span>
+				<br><br>
+				<span style="font-size:18px">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,sometimes on purpose (injected humour and the like).
+				</span>
+			</p>
+		</div>
+		<section>
+			<!--<nav class="vertical-menu"> -->
+				<ul class="vertical-menu">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">How we work</a></li>
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Contact Support</a></li>
+				</ul>
+			<!--</nav>-->
+			<article>
+				<h1>How we work</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+				</p>
+				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+			</article>
+		</section>
+	</div>
+</body>
+</html>
+

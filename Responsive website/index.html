@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Website</title>
+        <meta charset="utf">
+        <meta name="viewport" content="width=device-width , initial-sclae=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <style>
+            #banner{
+                height:200px;
+                background-color: lightseagreen;
+                text-align: center;
+                color: white;
+                padding: 50px;
+            }
+
+            #banner p{
+                margin-top: 10px;
+            }
+
+            nav  {
+                border-radius: 0 !important;
+                
+            }
+
+            li:hover{
+                background-color:gainsboro;
+            }
+            a:hover{
+               color:black;
+            }
+
+            .navbar {
+                margin: 0;
+                display: flex;
+                color: white;
+            }
+
+            .navbar a {
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 769px){
+                .row .navbar {
+                    flex-direction: column;
+                }
+            }
+
+            .col-md-4{
+                padding-left: 20px;
+                background-color: whitesmoke;
+            }
+
+            .aboutmeimage{
+                height: 200px;
+                width: 100%;
+                padding: 10px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                background-color:silver;
+            }
+
+            .imageone{
+                height: 100px;
+                width: 100%;
+                padding: 10px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                background-color:silver;
+            }
+
+            .imagetwo{
+                height: 100px;
+                width: 100%;
+                padding: 10px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                background-color:silver;
+            }
+
+            .imagethree{
+                height: 100px;
+                width: 100%;
+                padding: 10px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                background-color:silver;
+            }
+
+            .footer{
+                background-color: whitesmoke;
+                text-align: center;
+                height: 200px;
+                padding: 75px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="banner" class="container-fluid">
+            <h1><b>My Website</b></h1>
+            <p>With a <b>flexible</b> layout.</p>
+        </div>
+        <nav class="navbar navbar-inverse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="container-fluid">
+                    <h1><b>About Me</b></h1>
+                    <h5>Photo of me:</h5>
+                    <div class="aboutmeimage">
+                        <p>Image</p>
+                    </div>
+                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                    <h1><b>More Text</b></h1>
+                    <p>Lorem ipsum dolor sit ame.</p>
+                    <div class="imageone"><p>Image</p></div>
+                    <div class="imagetwo"><p>Image</p></div>
+                    <div class="imagethree"><p>Image</p></div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h1><b>TITLE HEADING</b></h1>
+                <h5>Title Description, Dec 7, 2017</h5>
+                <div class="aboutmeimage">
+                    <p>Image</p>
+                </div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <h1><b>TITLE HEADING</b></h1>
+                <h5><b>Title description, Sep 2, 2017</b></h5>
+                <div class="aboutmeimage">
+                    <p>Image</p>
+                </div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <h2><b>FOOTER</b></h2>
+        </footer>
+    </body>
+</html>

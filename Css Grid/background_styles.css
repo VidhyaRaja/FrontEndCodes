@@ -1,0 +1,9 @@
+body{
+    background-color:#696969;
+}
+
+.grid-item {
+    background-color: aqua;
+    border: 5px solid white;
+    content: 'Grid Box';
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Food Layout Site</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=dedevice-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+
+				/* Original image has size of 2400*1008.
+				Aspect ratio as a percentage = 42%.
+				1008(height) / 2400 (width) =.42 === 42%. */
+				
+			#firstrow{
+				max-width: 100%; 
+				padding-top:66%; 
+				outline: 5px solid red;;
+				background-image: url("piano.jpg");
+				background-repeat:no-repeat;
+				background-size:cover;
+				position: relative;
+				overflow: auto;
+			}
+
+			#firstrow .thumbnail {
+				text-align: center;
+				width: 300px;
+				padding-bottom: 25px;
+				display: inline-block;
+			}
+
+			.middlecontainer {
+				/* Perfectly centering DIV's horizontly and vertically  */
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				/*Ends Here*/
+				width:100%;
+				text-align: center;
+			}
+
+			.secondimage {
+				display: inline-block;
+				max-width: 300px;
+				height: 350px;
+			}
+
+			#secondrow{
+				background-image: linear-gradient(to right,#FBF7C8,#D9CCF3); 
+				/* padding: 10px; */
+				text-align: center;
+			}
+
+			.middlecontainer2{
+				display: inline-block;
+				width: 75%;
+				height: 350px;
+				position: relative;
+				margin: 25px;
+				border: 5px solid blue;
+				outline: 5px solid red;;
+			}
+
+			.firstimage{
+				position:absolute;
+				
+				top:15%;
+				
+				left:12%;
+				/* transform: translate(-50%,-50%); */
+				display: inline-block;
+				z-index: 12;
+				box-shadow:-10px -10px 5px grey;
+			}
+
+			.secondbox{
+				width: 350px;
+				height: 300px;
+				padding-left: 90px;
+				padding-right: 20px;
+				padding-top: 20px;
+				background-color: goldenrod;
+				display: inline-block;
+				position: absolute;
+				top:7.5%;
+				left:50%;
+				/* transform: translate(-50%,-50%); */
+				box-shadow:10px 10px 5px grey;
+			}
+			#secondrow p{
+				padding-bottom: 10px;
+			}
+
+			#thirdrow{
+				background-image: linear-gradient(to right,#D9CCF3,#FBF7C8); 
+				padding: 10px;
+				text-align: center;
+			}
+
+			.middlecontainer3{
+				display: inline-block;
+				width: 75%;
+				height: 350px;
+				position: relative;
+				outline: 5px solid red;
+			}
+
+			.firstbox{
+				width: 350px;
+				height: 300px;
+				padding-left: 60px;
+				padding-right: 20px;
+				padding-top: 20px;
+				background-color: goldenrod;
+				display: inline-block;
+				position:absolute;
+				top:50%;
+				left:200px;
+				transform: translate(-50%,-50%);
+				box-shadow:-10px -10px 5px grey;
+				outline: 5px solid red;
+			}
+
+			.thirdboximage{
+				position:absolute;
+				top:55px;
+				right:200px;
+				transform: translate(-50%,-50%);
+				display: inline-block;
+				z-index: 12;
+				box-shadow:10px 10px 5px grey;
+				outline: 5px solid red;
+			}
+
+			.fourthrow{
+				width: 100%; 
+				padding-top:66%; 
+				background-image: url("piano.jpg");
+				background-repeat:repeat;
+				background-size: cover;
+				text-align: center;
+				position: relative;
+			}
+
+			.box{
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				width: 200px;
+				height:100px;
+				padding: 10px;
+				margin-left: 50px;
+				background:rgba(255,255,255,.2);
+				box-shadow: 0 5px 15px rgba(0,0,0,.5);
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div id= "firstrow" class="container">
+				<div class="middlecontainer">
+					<div class="thumbnail">
+						<img src="cake.jpg" class="img-responsive" alt="cake"> 
+						<div>
+							<h2>Dessert of the day</h2>
+							<h5>Life is uncertan. Eat dessert first.</h5>
+							<p>There is only one difference between a log life and a good driver<br>
+							that, in the dinner, the sweets come last.</p>
+							<button type="button" class="btn btn-warning">Learn More</button>
+						</div>
+					</div>
+					<div class="secondimage">
+						<img src="gummibare.png" class="img-responsive" alt="Gummy Bear">
+					</div>
+				</div>
+			</div>
+			<div id="secondrow" class="container">
+				<h3>Few of our "secret" recipes</h3>
+				<p>If God had intended us to follow recipes. He would'nt have given us grandmothers.</p>
+				<div class="middlecontainer2">
+					<div class="firstimage">
+						<img  src="pizza.png" class="img-responsive" alt="pizza">
+					</div>
+					<div class="secondbox">
+						<p>FEATURED RECIPE</p>
+						<h3>Enjoy the best pizza with wine and lemon juice</h3>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+					</div>
+				</div>
+			</div>
+			<div id="thirdrow" class="container">
+				<div class="middlecontainer3">
+					<div class="firstbox">
+						<p>FEATUREED DESERT RECIPE</p>
+						<h3>Our best <i>pancake</i> and <i>grapes</i> combined together</h3>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+					</div>
+					<div class="thirdboximage">
+						<img src="pancake.png"  alt="pancake">
+					</div>
+				</div>
+			</div>
+			<div class="fourthrow">
+				<div class="box">
+					<h1>Testing</h1>
+					<p>Just trying out if this works</p>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>
